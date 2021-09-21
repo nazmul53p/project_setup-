@@ -135,60 +135,57 @@ yarn lint #or 'npm run lint'
 
 ### Create Linting Configuration file manually
 
-Create a `.eslintrc.js` file in the project root and enter the below contents:
+Create a `.eslintrc.json` file in the project root and enter the below contents:
 
-```js
-module.exports = {
-  root: true,
-  extends: [
+```json
+{
+  "extends": [
     "eslint:recommended",
     "plugin:prettier/recommended",
     "plugin:react/recommended", // Uses the recommended rules from @eslint-plugin-react
     "plugin:@typescript-eslint/eslint-recommended", // Uses the recommended rules from the @typescript-eslint/eslint-plugin
-    "plugin:@typescript-eslint/recommended", // Uses the recommended rules from the @typescript-eslint/eslint-plugin
+    "plugin:@typescript-eslint/recommended" // Uses the recommended rules from the @typescript-eslint/eslint-plugin
   ],
-  parser: "@typescript-eslint/parser", // Specifies the ESLint parser
-  env: {
-    browser: true,
-    es6: true,
-    jest: true,
-    node: true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 8
   },
-  parserOptions: {
-    ecmaVersion: 2020, // Allows for the parsing of modern ECMAScript features
-    sourceType: "module", // Allows for the use of imports
-    ecmaFeatures: {
-      jsx: true, // Allows for the parsing of JSX
-      arrowFunctions: true,
-    },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest": true
   },
-  plugins: ["react", "@typescript-eslint", "prettier"],
-  settings: {
-    react: {
-      version: "detect", // Tells eslint-plugin-react to automatically detect the version of React to use
-    },
-    "import/resolver": {
-      node: {
-        extensions: [".js", ".jsx", ".ts", ".tsx"],
-        paths: ["./src"],
-      },
-    },
+  "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "react/react-in-jsx-scope": 0,
+    "react-hooks/rules-of-hooks": "error",
+    "no-console": 0,
+    "react/state-in-constructor": 0,
+    "indent": 0,
+    "linebreak-style": 0,
+    "react/prop-types": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 100,
+        "tabWidth": 4,
+        "semi": true,
+        "endOfLine": "auto"
+      }
+    ]
   },
-  rules: {
-    // Existing rules
-    "comma-dangle": "off", // https://eslint.org/docs/rules/comma-dangle
-    "function-paren-newline": "off", // https://eslint.org/docs/rules/function-paren-newline
-    "global-require": "off", // https://eslint.org/docs/rules/global-require
-    "import/no-dynamic-require": "off", // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-dynamic-require.md
-    "no-inner-declarations": "off", // https://eslint.org/docs/rules/no-inner-declarations
-    // New rules
-    "class-methods-use-this": "off",
-    "import/extensions": "off",
-    "import/prefer-default-export": "off",
-    "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/no-var-requires": "off",
-  },
-};
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"]
+}
 ```
 
 Create a `.prettierrc` file in the project root and enter the below contents:
