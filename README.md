@@ -63,53 +63,36 @@ Follow the below settings for VS Code -
 
 ```json
 {
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-
-  "editor.formatOnSave": true,
-  "eslint.codeAction.showDocumentation": {
-    "enable": true
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  
-  "editor.rulers": [140],
-  "files.exclude": {
-    "**/.git": true,
-    "**/node_modules": true,
-    "**/build": true,
-    "**/coverage": true
-  },
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-  "eslint.alwaysShowStatus": true,
-  "eslint.format.enable": true,
-  "eslint.lintTask.enable": true,
-  "eslint.packageManager": "yarn", // change to npm if you use npm
-  "eslint.quiet": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "css.validate": false,
-  "jest.enableInlineErrorMessages": true,
-  "jest.showCoverageOnLoad": true,
-  "jest.runAllTestsFirst": false,
-  "prettier.jsxSingleQuote": true,
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "[javascript]": {
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": null
+    },
+    "[javascriptreact]": {
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": null
+    },
+    "[typescript]": {
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": null
+    },
+    "[typescriptreact]": {
+        "editor.formatOnSave": false,
+        "editor.defaultFormatter": null
+    },
+    "javascript.validate.enable": false, //disable all built-in syntax checking
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.fixAll.tslint": true,
+        "source.organizeImports": true
+    },
+    "eslint.alwaysShowStatus": true,
+    // emmet
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+        "typescript": "typescriptreact",
+    }
 }
 ```
 
