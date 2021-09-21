@@ -41,7 +41,6 @@ You need to install the below plugins:
 
 - ESLint by Dirk Baeumer
 - Prettier - Code formatter by Prettier
-- Dracula Official Theme (optional)
 
 ### Settings
 
