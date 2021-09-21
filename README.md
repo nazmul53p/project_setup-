@@ -9,7 +9,7 @@
 
 ## Table of Contents
 
-- [How to run](#how-to-run)
+- [How to create project (React with Typescript)](#how-to-create-project)
 - [Editor Setup](#editor-setup)
   - [Plugins](#plugins)
   - [Settings](#settings)
