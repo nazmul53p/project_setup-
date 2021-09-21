@@ -21,7 +21,7 @@
 
 <!-- HOW TO RUN -->
 
-## How to run
+## How to create project (React with Typescript)
 
 Please follow the below instructions to run this project in your computer:
 
@@ -29,23 +29,6 @@ Please follow the below instructions to run this project in your computer:
     ```sh
     npx create-react-app ./ --template typescript
     ```
-    
-Or
-
-1. Clone this repository
-   ```sh
-   git clone https://github.com/nazmul53p/project_setup-
-   ```
-2. Checkout to branch "lesson-3"
-   ```sh
-   git checkout lesson-3
-   ```
-3. Run
-   ```sh
-   yarn
-   ```
-4. Your app should be available in http://localhost:5500
-
 <!-- Editor Setup -->
 
 ## Editor Setup
