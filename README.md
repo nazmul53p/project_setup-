@@ -91,8 +91,6 @@ If you followed all previous steps, the theme should change and your editor shou
 
 Make sure in your VS Code Editor, "LF" is selected as line feed instead of CRLF (Carriage return and line feed). To do that, just click LF/CRLF in bottom right corner of editor, click it and change it to "LF". If you dont do that, you will get errors in my setup.
 
-<img src="public/line-feed.jpg" alt="Line Feed" width="700">
-
 ## Linting Setup
 
 In order to lint and format your React project automatically according to popular airbnb style guide, I recommend you to follow the instructions below.
