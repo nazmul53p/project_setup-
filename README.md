@@ -3,13 +3,13 @@
 <!-- PROJECT Title -->
 <br />
 <p align="center">
-  <h3 align="center"><a href="https://github.com/nazmul53p/project_setup-">Project Setup</a></h3>
+  <h3 align="center"><a href="https://github.com/nazmul53p/project_setup-">Project Setup (React with Typescript)</a></h3>
 
 <!-- TABLE OF CONTENTS -->
 
 ## Table of Contents
 
-- [How to create project (React with Typescript)](#how-to-create-project-(reacr-with-typescript))
+- [How to create project](#how-to-create-project)
 - [Editor Setup](#editor-setup)
   - [Plugins](#plugins)
   - [Settings](#settings)
