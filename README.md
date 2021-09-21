@@ -25,6 +25,13 @@
 
 Please follow the below instructions to run this project in your computer:
 
+1. Create the project
+    ```sh
+    npx create-react-app ./ --template typescript
+    ```
+    
+Or
+
 1. Clone this repository
    ```sh
    git clone https://github.com/nazmul53p/project_setup-
@@ -43,7 +50,7 @@ Please follow the below instructions to run this project in your computer:
 
 ## Editor Setup
 
-You can use any editor but as I personally prefer VS Code. I will give some instructions about how I prefer VS code to be setup for React applications.
+You can use any editor but as I personally prefer VS Code. I will give some instructions about how I prefer VS code to be setup for React applications with Typescript.
 
 ### Plugins
 
