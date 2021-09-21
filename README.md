@@ -234,6 +234,6 @@ Create a `.prettierignore` file in the project root and enter the below contents
 
 ## Contact
 
-Sumit Saha - [sumit@learnwithsumit.com](mailto:sumit@learnwithsumit.com)
+Nazmul Haque - [nazmul2018s@gmail.com](mailto:nazmul2018s@gmail.com)
 
-Project Link: [https://github.com/learnwithsumit/think-in-a-react-way](https://github.com/learnwithsumit/think-in-a-react-way)
+Project Link: [https://github.com/nazmul53p/project_setup-](https://github.com/nazmul53p/project_setup-)
