@@ -9,7 +9,7 @@
 
 ## Table of Contents
 
-- [How to create project (React with Typescript)](#how-to-create-project)
+- [How to create project (React with Typescript)](#how-to-create-project-(reacr-with-typescript))
 - [Editor Setup](#editor-setup)
   - [Plugins](#plugins)
   - [Settings](#settings)
