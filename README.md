@@ -98,13 +98,7 @@ In order to lint and format your React project automatically according to popula
 ### Install Dev Dependencies
 
 ```sh
-yarn add -D eslint prettier eslint-config-airbnb-typescript-prettier
-```
-
-or
-
-```sh
-npm i -D eslint prettier eslint-config-airbnb-typescript-prettier
+yarn add -D eslint-plugin-import eslint-plugin-jest eslint-plugin-json eslint-plugin-react @typescript-eslint/eslint-plugin prettier prettier-eslint eslint-config-prettier eslint-plugin-prettier@3.4.0
 ```
 
 or You can also add a new script in the scripts section like below to install everything with a single command:
@@ -125,7 +119,13 @@ Create a `.eslintrc.json` file in the project root and enter the below contents:
 
 ```json
 {
-  "extends": ["airbnb-typescript-prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended", // Uses the recommended rules from @eslint-plugin-react
+    "plugin:@typescript-eslint/eslint-recommended", // Uses the recommended rules from the @typescript-eslint/eslint-plugin
+    "plugin:@typescript-eslint/recommended" // Uses the recommended rules from the @typescript-eslint/eslint-plugin
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 8
