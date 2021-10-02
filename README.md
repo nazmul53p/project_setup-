@@ -120,6 +120,8 @@ Create a `.eslintrc.json` file in the project root and enter the below contents:
 ```json
 {
   "extends": [
+    "airbnb",
+    "airbnb/hooks",
     "eslint:recommended",
     "plugin:prettier/recommended",
     "plugin:react/recommended", // Uses the recommended rules from @eslint-plugin-react
