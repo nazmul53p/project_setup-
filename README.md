@@ -38,7 +38,6 @@ You can use any editor but as I personally prefer VS Code. I will give some inst
 ### Plugins
 
 You need to install the below plugins:
-
 - ESLint by Dirk Baeumer
 - Prettier - Code formatter by Prettier
 
@@ -96,7 +95,10 @@ Make sure in your VS Code Editor, "LF" is selected as line feed instead of CRLF 
 In order to lint and format your React project automatically according to popular airbnb style guide, I recommend you to follow the instructions below.
 
 ### Install Dev Dependencies
-
+```
+https://www.npmjs.com/package/eslint-config-airbnb-typescript-prettier
+```
+or
 ```sh
 yarn add -D eslint-plugin-import eslint-plugin-jest eslint-plugin-json eslint-plugin-react @typescript-eslint/eslint-plugin prettier prettier-eslint eslint-config-prettier eslint-plugin-prettier@3.4.0
 ```
