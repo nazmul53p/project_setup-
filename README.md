@@ -121,53 +121,58 @@ Create a `.eslintrc.json` file in the project root and enter the below contents:
 
 ```json
 {
-  "extends": [
-    "eslint:recommended",
-    "plugin:prettier/recommended",
-    "plugin:react/recommended", // Uses the recommended rules from @eslint-plugin-react
-    "plugin:@typescript-eslint/eslint-recommended", // Uses the recommended rules from the @typescript-eslint/eslint-plugin
-    "plugin:@typescript-eslint/recommended" // Uses the recommended rules from the @typescript-eslint/eslint-plugin
-  ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaVersion": 8
-  },
-  "env": {
-    "browser": true,
-    "node": true,
-    "es6": true,
-    "jest": true
-  },
-  "rules": {
-    "@typescript-eslint/explicit-module-boundary-types": "off",
-    "react/react-in-jsx-scope": 0,
-    "react-hooks/rules-of-hooks": "error",
-    "no-console": 0,
-    "react/state-in-constructor": 0,
-    "indent": 0,
-    "linebreak-style": 0,
-    "react/prop-types": 0,
-    "jsx-a11y/click-events-have-key-events": 0,
-    "react/jsx-filename-extension": [
-      1,
-      {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
-      }
+    "extends": [
+        "airbnb-typescript-prettier"
     ],
-    "prettier/prettier": [
-      "error",
-      {
-        "trailingComma": "es5",
-        "singleQuote": true,
-        "printWidth": 100,
-        "tabWidth": 4,
-        "semi": true,
-        "endOfLine": "auto"
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaVersion": 8
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "es6": true,
+      "jest": true
+    },
+    "rules": {
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "react/react-in-jsx-scope": 0,
+      "react-hooks/rules-of-hooks": "error",
+      "no-console": 0,
+      "react/state-in-constructor": 0,
+      "indent": 0,
+      "linebreak-style": 0,
+      "react/prop-types": 0,
+      "jsx-a11y/click-events-have-key-events": 0,
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
+      ],
+      "prettier/prettier": [
+        "error",
+        {
+          "trailingComma": "es5",
+          "singleQuote": true,
+          "printWidth": 100,
+          "tabWidth": 4,
+          "semi": true,
+          "endOfLine": "auto"
+        }
+      ]
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "paths": ["src"],
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
       }
-    ]
-  },
-  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"]
-}
+    },
+
+    "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"]
+  }
 ```
 
 Create a `.prettierrc` file in the project root and enter the below contents:
