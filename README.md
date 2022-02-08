@@ -97,6 +97,8 @@ In order to lint and format your React project automatically according to popula
 ### Install Dev Dependencies
 ```
 https://www.npmjs.com/package/eslint-config-airbnb-typescript-prettier
+
+yarn add -D eslint-config-airbnb-typescript-prettier eslint-config-prettier eslint-plugin-prettier prettier prettier-eslint
 ```
 or
 ```sh
