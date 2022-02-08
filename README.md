@@ -95,9 +95,8 @@ Make sure in your VS Code Editor, "LF" is selected as line feed instead of CRLF 
 In order to lint and format your React project automatically according to popular airbnb style guide, I recommend you to follow the instructions below.
 
 ### Install Dev Dependencies
-```
 https://www.npmjs.com/package/eslint-config-airbnb-typescript-prettier
-
+```
 yarn add -D eslint-config-airbnb-typescript-prettier eslint-config-prettier eslint-plugin-prettier prettier prettier-eslint
 ```
 or
